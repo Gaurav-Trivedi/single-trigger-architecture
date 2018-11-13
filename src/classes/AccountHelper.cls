@@ -3,37 +3,44 @@
 * @Developed By     : Gaurav Trivedi
 * @Created Date     : July 14, 2016
 * @Description      : This class provides functionality to work with Account based on the trigger context.
+* **********************************************************************************************************************
+*										Modification Log
+* **********************************************************************************************************************
+* 	Name				|	Version		|		Date		|					Discription
+* **********************************************************************************************************************
+*	Gaurav Trivedi 		|       1.0 	|	June 14, 2016	|	Initial Draft
+*
+* **********************************************************************************************************************
 */
 public with sharing class AccountHelper extends TriggerService {
-    public AccountHelper
-        (
+    public AccountHelper(
             Boolean isInsertIn ,
             Boolean isUpdateIn ,
+            Boolean isUnDeleteIn ,
             Boolean isDeleteIn ,
             Boolean isAfterIn ,
             Boolean isBeforeIn ,
-            Boolean isUnDeleteIn ,
             Integer sizeIn ,
-            String objectApiName , 
+            String objectApiName ,
             List<sObject> newRecordListIn ,
-            List<sObject> oldRecordListIn , 
+            List<sObject> oldRecordListIn ,
             Map<Id,sObject> mapOfNewRecordsIn ,
-            Map<Id,sObject> mapOfOldRecordsIn 
-        )
+            Map<Id,sObject> mapOfOldRecordsIn
+    )
     {
         super(
-            isInsertIn,
-            isUpdateIn ,
-            isUnDeleteIn,
-            isAfterIn ,
-            isBeforeIn , 
-            isUnDeleteIn ,
-            sizeIn ,
-            objectApiName,
-            newRecordListIn ,
-            oldRecordListIn ,
-            mapOfNewRecordsIn ,
-            mapOfOldRecordsIn );
+                isInsertIn,
+                isUpdateIn ,
+                isUnDeleteIn,
+                isDeleteIn,
+                isAfterIn ,
+                isBeforeIn ,
+                sizeIn ,
+                objectApiName,
+                newRecordListIn ,
+                oldRecordListIn ,
+                mapOfNewRecordsIn ,
+                mapOfOldRecordsIn );
     }
     /**
     * @function     :   handleAfterInsert
