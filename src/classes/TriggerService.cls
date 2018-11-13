@@ -9,7 +9,6 @@
 * 	Name				|	Version		|		Date		|					Discription
 * **********************************************************************************************************************
 *	Gaurav Trivedi 		|       1.0 	|	June 14, 2016	|	Initial Draft
-*
 * **********************************************************************************************************************
 * NOTE: DO NOT CHANGE THIS CLASS UNTIL WE WANT TO ADD COMMON METHOD FOR TRIGGERS
 */
